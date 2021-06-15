@@ -1,0 +1,71 @@
+home_page:
+  notification_popup:
+    container: //*[@id="normal-slidedown"]
+    button_no: //*[@id="onesignal-slidedown-cancel-button"]
+    button_yes: //*[@id="onesignal-slidedown-allow-button"]
+  logo: //*[@data-qa-id="hd-logo"]
+  button_login: //*[@data-qa-id="hd-login"]
+  button_user_avatar: //*[@data-qa-id="hd-pic-user"]
+  label_menu_setting_privacy: //*[@data-qa-id="list-item-card"]//*[contains(text(), "Pengaturan dan Privasi")]
+  headline_news:
+    card: (//*[@data-qa-id="multiple-headline-section"]/child::*) [1]
+    label_title: (//*[@data-qa-id="multiple-headline-section"]//*[@data-qa-id="title"]) [1]
+    label_author_name: (//*[@data-qa-id="multiple-headline-section"]//*[@data-qa-id="author-name"]) [1]
+    button_like: (//*[@data-qa-id="multiple-headline-section"]//*[@data-qa-id="like-button-wrapper"]) [1]
+    label_like_counter: (//*[@data-qa-id="multiple-headline-section"]//*[@data-qa-id="like-button-wrapper"]/span) [1]
+    button_comment: (//*[@data-qa-id="multiple-headline-section"]//*[@data-qa-id="comment-button-wrapper"]) [1]
+    label_comment_counter: (//*[@data-qa-id="multiple-headline-section"]//*[@data-qa-id="comment-button-wrapper"]/span) [1]
+    label_reading_time: (//*[@data-qa-id="multiple-headline-section"]//*[@data-qa-id="comment-button-wrapper"]/following-sibling::span) [1]
+
+login_page:
+  input_email: //*[@data-qa-id="input-email"]
+  label_email_error: //*[@data-qa-id="input-email"]//ancestor::*[@data-qa-id="main-section"]//span[@class="Textweb__StyledText-sc-1fa9e8r-0 etlKpB"]
+  input_password: //*[@data-qa-id="input-password"]
+  label_password_error: //*[@data-qa-id="input-password"]//ancestor::*[@data-qa-id="main-section"]//span[@class="Textweb__StyledText-sc-1fa9e8r-0 etlKpB"]
+  button_login: //*[@data-qa-id="btn-save"]
+
+news_page:
+  img_author_avatar: //*[@data-qa-id="author-profile-picture"]
+  label_author_name: //*[@data-qa-id="author-name"]
+  label_channel_name: //*[@data-qa-id="channel-name"]
+  label_publish_date: //*[@data-qa-id="publish-date"]
+  label_reading_time: //*[@data-qa-id="reading-time"]
+  label_title: //*[@data-qa-id="story-title"]
+  label_story: //*[@class="TextBoxweb__StyledTextBox-sc-1wzqkk1-0 hwNlLi"]
+  img_story_image: //*[@class="Helper__StyledFigure-sc-5998y0-6 XbWcq"]//img
+  label_story_image_caption: //*[@class="Helper__StyledFigure-sc-5998y0-6 XbWcq"]//span
+  label_tag_topic: //*[@data-qa-id="tag-topic"]
+  card_editor_section: //*[@data-qa-id="editor-section"]
+  button_like: //*[@data-qa-id="btn-like"]
+  label_like_counter: //*[@data-qa-id="btn-like"]//span
+  button_comment: //*[@data-qa-id="btn-comment"]
+  label_comment_counter: //*[@data-qa-id="btn-comment"]//span
+  button_share_whatsapp: //*[@data-qa-id="sosmed-whatsapp-white"]
+  button_share_facebook: //*[@data-qa-id="sosmed-facebook-white"]
+  button_share_twitter: //*[@data-qa-id="sosmed-twitter-white"]
+  button_share_line: //*[@data-qa-id="sosmed-line-white"]
+  button_share_copy: //*[@data-qa-id="copy-white"]
+  card_related_news: //*[@data-qa-id="news-card-related-story"]
+  card_trending_news: //*[@data-qa-id="trending-story-item"]
+  card_kumparan_plus: //*[@data-qa-id="grid-collection-list"]
+  comment_section:
+    container: //*[@data-qa-id="comment-section"]
+    input_comment: //*[@data-qa-id="comment-input-card"]
+    button_submit_comment: //*[@data-qa-id="btn-send-comment"]
+    card_comment_item: //*[@data-qa-id="comment-item"]
+
+settings_and_privacy_page:
+  card_password_setting: //*[@data-qa-id="profile-settings-card"]//*[@data-qa-id="title" and contains(text(), "Password")]
+
+change_password_page:
+  input_old_password: (//*[@data-qa-id="right-add-on"]/preceding-sibling::*/input) [1]
+  label_error_old_password: (//*[@data-qa-id="right-add-on"]/parent::*/following-sibling::*) [1]
+  input_new_password: (//*[@data-qa-id="right-add-on"]/preceding-sibling::*/input) [2]
+  label_error_new_password: (//*[@data-qa-id="right-add-on"]/parent::*/following-sibling::*) [2]
+  input_retype_new_password: (//*[@data-qa-id="right-add-on"]/preceding-sibling::*/input) [3]
+  label_error_retype_new_password: (//*[@data-qa-id="right-add-on"]/parent::*/following-sibling::*) [3]
+  button_save_password: //*[@data-qa-id="btn-save"]
+  success_change_password_modal:
+    container: //*[@data-qa-id="modal"]
+    label_caption: //*[@data-qa-id="modal"]//*[@data-qa-id="content"]
+    button_ok: //*[@data-qa-id="modal"]//*[@data-qa-id="btn-process"]
